@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" author="Team Storm">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>HOTEL TRANSVANIA</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .banner-image {
+            background-image: url("image/bg.jpeg");
+            height: 100vh;
+            background-size: cover;
+        }
+
+        h2{
+            font-family: 'Roboto', sans-serif;
+            font-size: 25px;
+            padding-top: 20px;
+            letter-spacing: 0.1rem;
+            color: #F3E7EB;
+            padding-left: 20px;
+
+        }
+
+        .facility-heading {
+            text-align: center;
+            font-size: 25px;
+            padding-top: 50px;
+            letter-spacing: 0.1rem;
+            color: black;
+        }
+
+        .line-rule {
+            width: 20%;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+       
+
+        .facility-paragraph {
+            font-size: 20px;
+            text-align: center;
+            padding-bottom: 30px;
+            color: black;
+
+        }
+
+        :root{
+            --grid-column-gap: 35px;
+            --first-last-background-color: #a9107a;
+            --indent-height: 50px;
+            --indent-bottom-position: 70px;
+            --body-background: #ffe8fe;
+            --row-height: 350px;
+            --middle-image: url("./example (1).jpg");
+
+            --mobile-text-content-height: 40rem;
+            --mobile-image-height: 45rem;
+        }
+
+        body{
+            background: var(--body-background);
+         
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container > div{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            padding: 2rem;
+            grid-column-gap: var(--grid-column-gap);
+            margin-bottom: 15px;
+            height: var(--row-height);
+        }
+
+        .text-content, .image{
+            height: 100%;
+        }
+
+        .text-content{
+            background: var(--first-last-background-color);
+            color: white;
+            padding: 10px;
+            position: relative;
+            order: 0;
+            font-size: 15px;
+            padding-left: 20px;
+        }
+
+        .text-content::after{
+            content: '';
+            width: var(--grid-column-gap);
+            height: var(--indent-height);
+            bottom: var(--indent-bottom-position);
+            left: 100%;
+            position: absolute;
+            background: var(--first-last-background-color);
+        }
+
+        .image{
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position:relative;
+            order: 1;
+        }
+
+        .image::after{
+            content: '';
+            width: var(--grid-column-gap);
+            height: var(--indent-height);
+            bottom: var(--indent-bottom-position);
+            background: var(--body-background);
+            left: 0;
+            position: absolute;
+
+            z-index: 1;
+        }
+
+
+         /* For right text content */
+         .container > div:nth-child(2n):before{
+            content: '';
+            order: 0;            
+        }
+
+        .container > div:nth-child(2n) .image::after{
+            left:auto;
+            right: 0;
+        }
+
+        .container > div:nth-child(2n) .text-content{
+            order: 2;            
+        }
+
+        .container > div:nth-child(2n) .text-content::after{
+            left: auto;
+            right: 100%;           
+        }
+
+        @media (max-width: 1199.98px) { 
+
+        }
+
+        @media (max-width: 991.98px) {
+            .container > div{
+                grid-template-columns: 2fr 3fr 2fr;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+           
+
+            .line-rule {
+            width:90%;
+            margin: auto;
+            margin-top: 10px;
+        }
+            
+            .text-content{
+                padding: 15px;
+            }
+            
+            .container > div{
+                grid-template-columns: 2fr 3fr;
+            }
+
+            .container > div:nth-child(2n){
+                grid-template-columns: 3fr 2fr;
+            }
+
+            .container > div:nth-child(2n)::before{
+                display: none;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .container > div{
+                display: flex;
+                flex-direction: column;
+                /* margin-bottom: 3rem; */
+                /* margin-top: 20px; */
+            }
+
+            .image{
+                height: var(--mobile-image-height);
+            }
+
+            .image::after{
+                display: none;
+            }
+
+            .text-content{
+                height: var(--mobile-text-content-height);
+                overflow: hidden;
+            }
+
+            .text-content::after{
+                display: none;
+            }
+
+            .container > div:nth-child(2n) .text-content{
+                order: 0;            
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="banner-image">
+    </section>
+    
+    <section class="banner-text">
+        <main>
+            <article>
+                <h1 class="facility-heading">OUR TOP FACILITIES</h1>
+                <hr class="line-rule">
+                <p class="facility-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa,
+                    consequatur! Laudantium amet enim
+                    unde consequatur rem doloremque a cupiditate incidunt, id soluta veritatis placeat eius quas ex.
+                    Natus, doloremque dolor.</p>
+            </article>
+        </main>
+    </section>
+    <div class="container">
+        <!-- First row -->
+        <div>    
+            <div class="text-content">
+                <h2>CONFERENCE CENTER</h2>
+    
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nam sit itaque saepe, magni facilis numquam ea odio explicabo nisi. Nostrum explicabo ratione a ipsam ut aperiam enim mollitia laboriosam?</p>
+            </div>
+
+            <div class="image" style="background-image: url('./image/conference.jpeg')"></div>
+        </div>
+
+        <!-- Seconod row -->
+        <div>
+            <div class="text-content">
+                <h2>SWIMMING POOL</h2>
+    
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nam sit itaque saepe, magni facilis numquam ea odio explicabo nisi. Nostrum explicabo ratione a ipsam ut aperiam enim mollitia laboriosam?</p>
+            </div>
+    
+            <div class="image" style="background-image: url('./image/swimming-pool.jpeg')"></div>
+        </div>
+
+        <!-- Third row -->
+        <div>
+            <div class="text-content">
+                <h2>MEETING ROOM</h2>
+    
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nam sit itaque saepe, magni facilis numquam ea odio explicabo nisi. Nostrum explicabo ratione a ipsam ut aperiam enim mollitia laboriosam?</p>
+            </div>
+    
+            <div class="image" style="background-image: url('./image/meeting-room.jpg')"></div>
+        </div>
+
+        <!-- Fourth row -->
+        <div>
+            <div class="text-content">
+                <h2>GYMNASIUM</h2>
+    
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nam sit itaque saepe, magni facilis numquam ea odio explicabo nisi. Nostrum explicabo ratione a ipsam ut aperiam enim mollitia laboriosam?</p>
+            </div>
+    
+            <div class="image" style="background-image: url('./image/gymnasium.jpg')"></div>
+        </div>
+    </div>
+   
+</body>
+</html>
