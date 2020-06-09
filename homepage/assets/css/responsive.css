@@ -1,0 +1,100 @@
+/* Responsive queries for Hero area */
+@media (max-width: 767px) {
+  .hero {
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .fa-bars {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero .navbar {
+    margin: 0 10px;
+  }
+
+  img {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero .navbar .nav {
+    text-align: center;
+    display: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-content {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-heading {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .btn {
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero .btn {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* ---- End for Hero area ---- */
+
+@media (max-width: 767px) {
+  .room-section {
+    text-align: center;
+  }
+
+  .room-section hr {
+    width: auto;
+  }
+  .room-section div {
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn {
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #facilities {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .section2 {
+    height: auto;
+    margin: auto;
+  }
+
+  .section2 .btn {
+    margin: auto;
+  }
+}
