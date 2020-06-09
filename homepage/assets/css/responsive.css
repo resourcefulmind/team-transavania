@@ -1,11 +1,5 @@
 /* Responsive queries for Hero area */
 @media (max-width: 767px) {
-  .hero {
-    height: auto;
-  }
-}
-
-@media (max-width: 767px) {
   .fa-bars {
     display: block !important;
   }
@@ -48,21 +42,21 @@
 
 @media (max-width: 767px) {
   .hero-heading {
-    margin-top: 40px;
+    margin-top: 0;
     font-size: 30px;
   }
 }
 
 @media (max-width: 480px) {
   .hero .btn {
-    width: auto;
+    margin: 50px 0px 0px;
   }
 }
 
 @media (max-width: 767px) {
   .hero .btn {
     font-size: 2.2rem;
-    margin-bottom: 3rem;
+    width: auto;
   }
 }
 
@@ -82,12 +76,6 @@
 
   .room-section img {
     display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .btn {
-    margin: auto;
   }
 }
 
@@ -115,10 +103,18 @@
 }
 
 /* Footer */
-@media (max-width: 767px) {
+
+@media (max-width: 480px) {
   .footer-container {
     height: auto;
     margin-top: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-container {
+    height: auto;
+    margin-top: 0;
   }
 
   .footer-container .column {
