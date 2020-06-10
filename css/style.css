@@ -1,10 +1,10 @@
-                /*
-
-
-*/
+*{
+    box-sizing: border-box;
+}
                 
                 body {
                     background: #DFDBDB;
+                    padding: 10px; 
                 }
                 
                 .room-card {
