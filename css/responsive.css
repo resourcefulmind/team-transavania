@@ -1,5 +1,15 @@
 /* Responsive queries for Hero area */
 @media (max-width: 767px) {
+  section {
+    margin: 0 3.5rem;
+  }
+
+  hr {
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
   .fa-bars {
     display: block !important;
   }
@@ -8,6 +18,7 @@
 @media (max-width: 767px) {
   .hero .navbar {
     margin: 0 10px;
+    padding-top: 12px;
   }
 }
 
@@ -67,15 +78,17 @@
     text-align: center;
   }
 
-  .room-section hr {
-    width: auto;
-  }
   .room-section div {
     width: auto;
   }
 
   .room-section img {
-    display: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .room-section .btn {
+    margin: 25px auto;
   }
 }
 
@@ -86,8 +99,9 @@
 }
 
 @media (max-width: 767px) {
-  #facilities {
-    display: none;
+  #facilities .column {
+    flex-basis: auto;
+    margin: 0.5rem;
   }
 }
 
@@ -99,6 +113,12 @@
 
   .section2 .btn {
     margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .right-panel span {
+    font-size: 1rem;
   }
 }
 
@@ -135,6 +155,7 @@
 @media (max-width: 767px) {
   hr.bottom {
     width: auto;
+    margin-bottom: 0;
   }
 }
 
