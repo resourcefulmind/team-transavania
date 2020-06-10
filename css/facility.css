@@ -110,7 +110,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
     order: 1;
-    margin-top:20px;
+    
 }
 
 .image::after {
@@ -206,6 +206,7 @@ body {
     }
     .text-content p {
         font-size: 10px;
+    
     }
 
     .text-content::after {
