@@ -91,6 +91,7 @@ body {
     order: 0;
     font-size: 15px;
     padding-left: 20px;
+    
 }
 
 .text-content::after {
@@ -109,6 +110,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
     order: 1;
+    margin-top:20px;
 }
 
 .image::after {
@@ -189,6 +191,7 @@ body {
 
     .image {
         height: var(--mobile-image-height);
+        height: 1000px;
     }
 
     .image::after {
@@ -198,6 +201,11 @@ body {
     .text-content {
         height: var(--mobile-text-content-height);
         overflow: hidden;
+        height: 1000px
+      
+    }
+    .text-content p {
+        font-size: 10px;
     }
 
     .text-content::after {
