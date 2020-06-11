@@ -5,7 +5,6 @@
 
 a:hover, a:focus {
   text-decoration: none !important;
-  color: #fff !important;
 }
 
 html {
@@ -172,8 +171,8 @@ main {
 
 .section-title {
   font-size: 4rem;
-  margin-top: 100px;
   margin-bottom: 0;
+  margin-top: 0;
   color: #484141;
 }
 
@@ -281,6 +280,10 @@ main {
 
 .luxury-area .btn {
   margin: 45px auto;
+}
+
+.luxury-area .section-title {
+  margin-top: 100px;
 }
 
 /* ---- Footer Area ---- */

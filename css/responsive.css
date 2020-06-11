@@ -22,10 +22,6 @@
   .room-section hr {
     width: auto;
   }
-
-  .section-title {
-    margin-top: 50px;
-  }
 }
 
 @media (max-width: 767px) {
