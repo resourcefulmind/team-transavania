@@ -1,89 +1,96 @@
-/* Responsive queries for Hero area */
-@media (max-width: 767px) {
-  section {
-    margin: 0 3.5rem;
+@media (max-width: 480px) {
+  .hero .btn {
+    margin: 50px 0px 0px;
   }
 
-  hr {
+  .footer-container {
+    height: auto;
+    margin-top: 70px;
+  }
+
+  #facilities .row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  #facilities .row .right-panel {
+    width: 100%;
+    margin-top: 0.6rem;
+  }
+
+  .room-section hr {
     width: auto;
   }
 }
 
 @media (max-width: 767px) {
-  .fa-bars,
-  .fa-close {
-    display: block !important;
+  hr {
+    width: auto;
   }
-}
 
-@media (max-width: 767px) {
+  .luxury-area {
+    padding: 1rem;
+  }
+
+  .luxury-area hr {
+    width: auto;
+  }
+
   .hero .navbar {
     margin: 0 10px;
     padding-top: 12px;
   }
-}
 
-@media (max-width: 767px) {
   .hero .navbar p {
     display: none;
   }
-}
 
-@media (max-width: 767px) {
   .hero .navbar .nav {
-    text-align: center;
-    width: 100%;
     background: rgba(0, 0, 0, 1);
+    text-align: center;
+    display: none;
+    width: 100%;
     position: absolute;
     top: 90px;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: 2;
-    display: none;
     flex-direction: column;
     transition: all 0.4s;
     min-height: 80vh;
     height: 100%;
     justify-content: center;
   }
-}
 
-@media (max-width: 767px) {
   .hero .navbar .nav li {
     margin: 4rem 0 3rem 1.2rem;
   }
-}
 
-@media (max-width: 767px) {
   .hero-content {
     margin: 0 2rem;
   }
-}
 
-@media (max-width: 767px) {
   .hero-heading {
     margin-top: 0;
     font-size: 30px;
   }
-}
 
-@media (max-width: 480px) {
-  .hero .btn {
-    margin: 50px 0px 0px;
-  }
-}
-
-@media (max-width: 767px) {
   .hero .btn {
     font-size: 2.2rem;
     width: auto;
   }
-}
 
-/* ---- End for Hero area ---- */
+  .hero .btn {
+    margin: 50px 0px 0px;
+  }
 
-@media (max-width: 767px) {
+  .fa-bars,
+  .fa-close {
+    display: block !important;
+  }
+
   .room-section {
     text-align: center;
   }
@@ -100,22 +107,16 @@
   .room-section .btn {
     margin: 25px auto;
   }
-}
 
-@media (max-width: 767px) {
   .section-title {
     font-size: 2.8rem;
   }
-}
 
-@media (max-width: 767px) {
   #facilities .column {
     flex-basis: auto;
     margin: 0.5rem;
   }
-}
 
-@media (max-width: 767px) {
   .section2 {
     height: auto;
     margin: auto;
@@ -124,63 +125,11 @@
   .section2 .btn {
     margin: auto;
   }
-}
 
-@media (max-width: 767px) {
   .right-panel span {
     font-size: 1rem;
   }
-}
 
-/* Footer */
-
-@media (max-width: 480px) {
-  .room-section {
-    margin-bottom: 0;
-  }
-
-  .section-title {
-    font-size: 2.4rem;
-    margin-top: 0;
-  }
-
-  .section-content {
-    font-size: 1.4rem;
-    margin-top: 0;
-    padding: 0 !important;
-  }
-
-  .footer-container {
-    height: auto;
-    margin-top: 70px;
-  }
-
-  .footer-container .column {
-    margin-top: 1rem;
-  }
-
-  .footer-container p,
-  .footer-container a {
-    font-size: 1.3rem;
-  }
-
-  #facilities {
-    padding: 0;
-  }
-
-  #facilities .row {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-
-  #facilities .row .right-panel {
-    width: 100%;
-    margin-top: 0.6rem;
-  }
-}
-
-@media (max-width: 767px) {
   .footer-container {
     height: auto;
     margin-top: 0;
@@ -199,13 +148,9 @@
     display: block;
     margin-top: 40px;
   }
-}
 
-@media (max-width: 767px) {
   hr.bottom {
     width: auto;
     margin-bottom: 0;
   }
 }
-
-/* End of Footer */
