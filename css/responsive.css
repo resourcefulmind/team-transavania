@@ -146,7 +146,11 @@
 
   .footer-container .location a:last-of-type {
     display: block;
-    margin-top: 40px;
+    margin-top: 5px;
+  }
+
+  .footer-container img {
+    width: 7%;
   }
 
   hr.bottom {

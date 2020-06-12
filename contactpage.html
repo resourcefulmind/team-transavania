@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="assets/img/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hotel Transavania Website</title>
+  </head>
+
+  <body>
+    <header class="hero">
+      <div id="overlay"></div>
+        <nav class="navbar">
+            <div style="display: flex;">
+                <img src="images/img/logo.svg" alt="" />
+                <p>Hotel Transavania</p>
+            </div>
+
+            <i class="fa fa-bars" id="icon"></i>
+
+            <ul class="nav">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="roompages.html">Rooms</a>
+                </li>
+                <li>
+                    <a href="facilitypage.html">Facilities</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="contact-content">
+          <h1 class="primary-heading"> GET IN TOUCH WITH US </h1>
+          <p style="font-size: 18px; margin: 0;">
+            WE ARE ALWAYS READY TO HEAR YOU OUT...
+          </p>
+        </div>
+
+    </header>
+
+<!-- contact page codes written after the comment -->
+
+    <section id="contact-page">
+      
+      <div class="container">
+        <p style="font-size: 20px;"> SEND US A MESSAGE </p>
+        <form action="action_page.php" id="contact" autocomplete="off">
+
+          <div class="row">
+              <div class="col-md">
+                <input type="text" name="firstname" placeholder="Your Name" />
+                <input type="text" name="tel" placeholder="Phone number"  tabindex="0"/>
+              </div>
+              <div class="col-md">
+                <input type="text" name="email" placeholder="Emailaddress" />
+                <input type="text" name="subject" placeholder="Subject" tabindex="0" />
+              </div>
+          </div>
+            
+            <textarea id="subject" name="subject" placeholder="Send us a Message"></textarea>               
+           <button class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+
+        <footer class="footer-container">
+        <div class="column">
+            <p class="title">Hotel Transvania</p>
+            <div class="location">
+                <a href="https://goo.gl/maps/ct6hbTr46dtLZkLv7">
+                    <img src="images/img/icons/location.svg" alt="" />
+                </a>
+                <a href="https://goo.gl/maps/ct6hbTr46dtLZkLv7">7 ZIKS AVENUE, AWKA NIGERIA</a>
+            </div>
+        </div>
+
+        <div class="column">
+            <p class="title">Menu</p>
+            <hr />
+            <a class="menu text" href="#">Home</a>
+            <a class="menu text" href="#">Rooms &amp; Rates</a>
+            <a class="menu text" href="#">Facilities</a>
+        </div>
+
+        <div class="column">
+            <p class="title">Contact</p>
+            <hr />
+            <p class="text phone">+234-810-9819-775</p>
+            <p class="text">
+                <a href="mailto:help@hoteltransavania.com">help@hoteltransavania.com</a>
+            </p>
+        </div>
+
+        <div class="column">
+            <p class="title">Social Media</p>
+            <hr />
+            <a href="https://facebook.com">
+                <img class="icons" src="images/img/icons/fb.svg" alt="facebook" />
+            </a>
+            <a href="https://twitter.com">
+                <img class="icons" src="images/img/icons/tw.svg" alt="twitter" />
+            </a>
+            <a href="https://linkedin.com">
+                <img class="icons" src="images/img/icons/ln.svg" alt="linkedIn" />
+            </a>
+        </div>
+        <hr class="bottom" />
+    </footer>
+
+    <!-- javascript library -->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
