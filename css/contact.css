@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+/*body {
+    font-family: 'Roboto', sans-serif;
+}*/
+
+.hero {
+	background-image: url("../images/image/meeting-room.jpg");
+	height: 45vh;
+	/*padding-top: 3rem;*/
+}
+
+.hero .navbar .nav {
+	position: absolute;
+	left: 52%;
+} 
+
+.hero .navbar {
+	padding-top: 2.5rem;
+}
+
+.hero .navbar .nav li {
+  margin-left: 8rem;
+}
+
+.hero .navbar .nav li:first-child {
+	margin-left: 0;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 70%;
+  color: white;
+  margin: 0 7rem;
+}
+
+.primary-heading {
+	font-size: 40px;
+	font-weight: lighter;
+}
+
+#contact-page {
+	margin-top: 100px;
+}
+
+.container {
+	width: 45%;
+	margin: 0 auto;
+	border: .5px solid #d1d1d1;
+	-webkit-box-shadow: 0 3px 7px rgba(0,0,0, .2);
+		box-shadow: 0 3px 7px rgba(0,0,0, .2);
+	padding: 10px 20px 20px;
+}
+
+.col-md:first-child {
+	margin-right: 10px;
+}
+
+input[type=text],
+textarea{
+	outline: none;
+    font-size: 12px;
+    width: 100%;
+    padding: 1.8rem;
+    margin-bottom: 2rem;
+    border: .5px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+         box-shadow: none;
+         overflow: visible;
+}
+
+.container input:active, textarea:active, 
+.container input:focus, textarea:focus {
+	border: 1px solid #8a2d86;
+	 -webkit-transition: 1.2s;
+  	transition: 1.2s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    opacity: .7;
+}
+
+.btn {
+	width: 200px;
+	margin: 0;
+	padding: 13px;
+}
+
+button:hover {
+	background-color: #8a2d86;
+}
+
+textarea {
+    height: 12rem;
+}
+
+.footer-container {
+	margin-top: 12vh;
+}
+

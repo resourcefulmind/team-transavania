@@ -122,6 +122,27 @@
   }
 }
 
+/* Contact page */
+@media screen and (max-width: 767px) {
+  #contact-page .container {
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+  .contact-content {
+    margin: 0;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+   #contact-page .container {
+    width: 60%;
+  }
+  .hero .navbar .nav li {
+  margin-left: 6rem;
+}
+}
+
 /* Footer */
 
 @media (max-width: 480px) {
@@ -148,7 +169,11 @@
 
   .footer-container .location a:last-of-type {
     display: block;
-    margin-top: 40px;
+    margin-top: 5px;
+  }
+
+  .footer-container img {
+    width: 7%;
   }
 }
 
