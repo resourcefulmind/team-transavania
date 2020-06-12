@@ -6,6 +6,38 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.hero {
+    background-image: url("../images/img/gym_room.svg");
+    height: 85vh;
+}
+
+.banner-background {
+    background-color: rgba(93, 27, 109, 0.35);
+    height: 85vh;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 70%;
+  color: white;
+  margin: 0 7rem;
+}
+
+.banner-content .primary-heading {
+	font-size: 40px;
+	font-weight: 900;
+}
+
+.banner-content > p {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.17em;
+    margin: 0;
+}
+
 .banner-image {
     background-image: url("../images/image/bg.jpeg");
     height: 100vh;
